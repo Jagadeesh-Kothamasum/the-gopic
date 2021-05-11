@@ -1,0 +1,691 @@
+/*------------------Basic CSS-----------------------*/
+html {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    min-height: 200vh;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    display: grid;
+}
+
+.body {
+    background-color: black;
+
+}
+
+/*     --------------------------------------------------    */
+/*     -------------------SECTION1-----------------------    */
+/*     --------------------------------------------------    */
+
+/*------------------PC-NAV-BAR-----------------------*/
+
+
+
+#ham-icon {
+    display: none;
+}
+
+#nav-bar {
+    position: fixed;
+    background-color: transparent;
+    z-index: 9;
+    width: 100%;
+    transition: background-color 0.4s ease-out;
+    box-sizing: border-box;
+}
+#nav-bar.scroll {
+  background-color: #A1572F;
+  color: #eef;    z-index: 9;
+    height:60px;
+
+}
+
+
+
+#brand-logo {
+    width: 85px;
+    height: 85px;
+    background-color: transparent;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    float: left;
+}
+
+/*...Nav-buttons....*/
+.button1 {
+    border: 0px solid ghostwhite;
+    color: ghostwhite;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 5px 5px;
+    font-family: 'Architects Daughter', cursive !important;
+    font-weight: bold;
+
+}
+
+.button1:hover {
+    background-color: ghostwhite;
+    color: Black;
+
+
+}
+
+.button2 {
+    border: 0px solid ghostwhite;
+    color: ghostwhite;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+
+
+}
+
+.button2:hover {
+    font-size: 110%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#mob-nav {
+    display: none;
+}
+
+#mob-nav-brand {
+    display: none;
+
+}
+
+#brand-name {
+    text-decoration: none;
+    font-size: 175%;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    position: relative;
+    top: 30px;
+    float: left;
+}
+
+#brand-name:hover {
+    font-size: 180%;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*---------------CAROUSEL----------------*/
+
+#carouselExampleIndicators {}
+
+.carousel-inner {
+
+    background: black;
+    overflow: hidden;
+}
+
+.img1 {
+    opacity: 0.3;
+    height: 850px;
+}
+
+.img2 {
+    opacity: 0.3;
+    height: 850px;
+
+}
+
+.img3 {
+    opacity: 0.3;
+    height: 850px;
+}
+
+.nav-item {
+    position: relative;
+    float: right;
+    padding: 30px;
+    font-size: 150%;
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+#carouselExampleIndicators {
+    display: block;
+}
+
+#Content-HomePage {
+    width: 350;
+    ;
+    position: absolute;
+    top: 22.5%;
+    left: 13%;
+    color: ghostwhite;
+}
+
+.Text-on-Car {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 450%;
+    line-height: 125%;
+}
+
+#text-2 {
+    position: absolute;
+    width: 150%;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.Text2-0n-Car {
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+    line-height: 150%;
+
+}
+
+/*-------Contact Us Button------------*/
+.Con-But{
+    
+position: absolute !important;
+    margin-top: 530px !important;
+    margin-left: 180px!important;
+    z-index:9; 
+    /*Change this css for position change of button*/
+}
+.Con-But a {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+.Con-But-Need {
+	position: relative !important;
+	margin: auto !important;
+	padding: 19px 22px !important;
+	transition: all .2s ease !important;
+}
+
+.Con-But-Need:before {
+	content: "" !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	display: block !important;
+	border-radius: 28px !important;
+	background: rgba(255, 171, 157, 0.5) !important;
+	width: 56px !important;
+	height: 56px !important;
+	transition: all .3s ease !important;
+}
+
+.Con-But-Need span {
+	position: relative !important;
+	font-size: 16px !important;
+	line-height: 18px !important;
+	font-weight: 900 !important;
+	letter-spacing: .25em !important;
+	text-transform: uppercase !important;
+	vertical-align: middle !important;
+    font-family: 'Roboto', sans-serif;
+    color: ghostwhite;
+}
+
+.Con-But-Need svg {
+	position: relative !important;
+	top: 0 !important;
+	margin-left: 10px !important;
+	fill: none !important;
+	stroke-linecap: round !important;
+	stroke-linejoin: round !important;
+	stroke: #111 !important;
+	stroke-width: 2 !important;
+	transform: translateX(-5px) !important;
+	transition: all .3s ease !important;
+}
+
+.Con-But-Need:hover:before {
+	width: 100% !important;
+	background: #f97509 !important;
+}
+
+.Con-But-Need:hover svg {
+	transform: translateX(0) !important;
+}
+
+.Con-But-Need:active {
+	transform: scale(0.96) !important;
+}
+
+/*------------------MOB-NAV-BAR-----------------------*/
+@media only screen and (max-width: 900px) {
+    .button1 {
+        display: none;
+    }
+
+    .button2 {
+        display: none;
+    }
+
+    #a-id {
+        float: right;
+    }
+
+    #brand-name {
+        float: right;
+        text-decoration: none;
+        font-size: 150%;
+        font-weight: bold;
+        color: white;
+        font-family: 'Architects Daughter',
+            cursive;
+        position: relative;
+        top: 15px;
+    }
+
+    #brand-logo {
+        width: 80px;
+        height: 70px;
+        background-color: transparent;
+        position: relative;
+        top: 0px;
+        float: right;
+        margin-left: -30px;
+        transition: 0.2s;
+    }
+
+    #brand-name:hover {
+        font-size: 23px;
+        ;
+        text-decoration: underline;
+        text-align: center;
+
+    }
+
+    #mob-nav {
+        display: block;
+        position: fixed;
+        z-index: 9;
+    }
+
+    .img1 {
+        opacity: 0.3;
+        height: 500px;
+    }
+
+    .img2 {
+        opacity: 0.3;
+        height: 500px;
+
+    }
+
+    .img3 {
+        opacity: 0.3;
+        height: 500px;
+    }
+
+    #nav-bar {
+        position: fixed;
+        background-color: transparent;
+        z-index: 9;
+        width: 100%;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    #ham-icon {
+        font-size: 200%;
+        color: ghostwhite;
+        display: block;
+        margin: 10px;
+        margin-left: 20px !important;
+    }
+}
+
+/*------------------TAB-NAV-BAR-----------------------*/
+@media only screen and (max-width: 600px) {
+    .img1 {
+        opacity: 0.3;
+        height: 300px;
+    }
+
+    .img2 {
+        opacity: 0.3;
+        height: 300px;
+
+    }
+
+    .img3 {
+        opacity: 0.3;
+        height: 300px;
+    }
+
+}
+/*     --------------------------------------------------    */
+/*     -------------------SECTION2-----------------------    */
+/*     --------------------------------------------------    */
+
+#section-2 {
+    background: #1c1c1c;
+    opacity: 0.9;
+    width: 100%;
+    height: 1700px;
+}
+
+#categories {
+    width: 100%;
+    height: 150px;
+
+}
+
+#border {
+    margin: auto;
+    width: 7.5%;
+    border-bottom: 0.5px solid ghostwhite;
+
+}
+
+#text-1 {
+    color: ghostwhite;
+    font-family: 'Roboto', sans-serif;
+    font-size: 300%;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+#gallery {
+    background: #1c1c1c;
+    overflow: hidden;
+    padding-left: 7.5%;
+    margin: auto;
+    width: 100%;
+
+}
+
+.img {
+    opacity: 0.7;
+    float: left;
+    height: 450px;
+    width: 30%;
+}
+.img:hover {
+    background-color: ghostwhite;
+    opacity: 0.1;
+    float: left;
+    transform: scale(1.0); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+
+.Con-But1{
+    
+position: absolute !important;
+    margin-top: 15%;
+    margin-left: 8% !important;
+    
+    z-index:9; 
+    opacity: 0;
+    
+    /*Change this css for position change of button*/
+}
+img:hover .Con-But1{
+    opacity: 1 !important;
+}
+
+.Con-But a {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
+.Con-But-Need {
+	position: relative !important;
+	margin: auto !important;
+	padding: 19px 22px !important;
+	transition: all .2s ease !important;
+}
+
+.Con-But-Need:before {
+	content: "" !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	display: block !important;
+	border-radius: 28px !important;
+	background: rgba(255, 171, 157, 0.5) !important;
+	width: 56px !important;
+	height: 56px !important;
+	transition: all .3s ease !important;
+}
+
+.Con-But-Need span {
+	position: relative !important;
+	font-size: 16px !important;
+	line-height: 18px !important;
+	font-weight: 900 !important;
+	letter-spacing: .25em !important;
+	text-transform: uppercase !important;
+	vertical-align: middle !important;
+    font-family: 'Roboto', sans-serif;
+    color: ghostwhite;
+}
+
+.Con-But-Need svg {
+	position: relative !important;
+	top: 0 !important;
+	margin-left: 10px !important;
+	fill: none !important;
+	stroke-linecap: round !important;
+	stroke-linejoin: round !important;
+	stroke: #111 !important;
+	stroke-width: 2 !important;
+	transform: translateX(-5px) !important;
+	transition: all .3s ease !important;
+}
+
+.Con-But-Need:hover:before {
+	width: 100% !important;
+	background: #f97509 !important;
+}
+
+.Con-But-Need:hover svg {
+	transform: translateX(0) !important;
+}
+
+.Con-But-Need:active {
+	transform: scale(0.96) !important;
+}
+/*     --------------------------------------------------    */
+/*     -------------------SECTION3-----------------------    */
+/*     --------------------------------------------------    */
+.contact-Form {
+   
+    position: relative;
+    height: 100%;
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.contact-Form .Contact-Form-Content{
+    position: relative;
+    top: -45px;
+    max-width: 800px;
+    text-align: center;
+    color: #fff;
+}
+.contact-Form .Contact-Form-Content h2{
+    font-size: 36px;
+    font-weight: 500px;
+    color: #fff;
+
+}
+.contact-Form .Contact-Form-Content p{
+    font-weight: 300px;
+    color: #fff;
+
+}
+.Contact-Form-Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.Contact-Form-Container .ContactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Contact-Form-Container .ContactInfo .box{
+    position: relative;
+    padding: 20px 0 20px 0;
+    display: flex;
+}
+
+.Contact-Form-Container .ContactInfo .box .Contact-Form-Icons{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.Contact-Form-Container .ContactInfo .box .Contact-Form-Text{
+    
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    
+}
+
+.Contact-Form-Container .ContactInfo .box .Contact-Form-Text h3{
+    font-weight: 500;
+    color: #00bcd4;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+.ContactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.ContactForm h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500px;
+}
+.ContactForm .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.ContactForm .input-box input,.ContactForm .input-box textarea{
+    width:100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize :none;
+}
+.ContactForm .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16x;
+    pointer-events: none;
+    color: #666;
+    transition: 0.5%;
+    margin: 10px 0;
+}
+.ContactForm .input-box input:focus ~ span , .ContactForm .input-box input:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.ContactForm .input-box textarea:focus ~ span , .ContactForm .input-box textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.ContactForm .input-box input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
